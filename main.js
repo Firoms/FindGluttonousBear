@@ -1,29 +1,30 @@
-
 const bg = document.getElementById("bg");
-const menuBtns = document.getElementsByClassName("menuBtn");
-
-
-function removeMenu(){
-    for (let i = 0; i < menuBtns.length; i++){
-        menuBtns[i].style.display = "none"
-    }
-}
-
-
+const mainBtns = document.getElementById("mainMenu");
+const returnBtn = document.getElementById("return");
 
 
 function showGame(){
     bg.style.backgroundImage = "url(./game_bg.png)";
-    removeMenu();
+    mainBtns.style.display = "none";
+    returnBtn.style.display = "flex";
 }
 
 function showHow(){
     bg.style.backgroundImage = "url(./intro_bg.jpg)";
-    removeMenu()
+    mainBtns.style.display = "none";
+    returnBtn.style.display = "flex";
 }
-
 
 function showRank(){
     bg.style.backgroundImage = "url(./rank_bg.jpg)";
-    removeMenu()
+    mainBtns.style.display = "none";
+    returnBtn.style.display = "flex";
 }
+
+
+function showMenu(){
+    bg.style.backgroundImage = "url(./menu_bg.jpg)";
+    mainBtns.style.display = "flex";
+    returnBtn.style.display = "none";
+}
+
