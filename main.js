@@ -1,6 +1,7 @@
 const bg = document.getElementById("bg");
 const mainBtns = document.getElementById("mainMenu");
 const returnBtn = document.getElementById("return");
+const howCont = document.getElementById("how");
 
 
 function showGame(){
@@ -12,6 +13,7 @@ function showGame(){
 function showHow(){
     bg.style.backgroundImage = "url(./intro_bg.jpg)";
     mainBtns.style.display = "none";
+    howCont.style.display = "block";
     returnBtn.style.display = "flex";
 }
 
@@ -26,5 +28,6 @@ function showMenu(){
     bg.style.backgroundImage = "url(./menu_bg.jpg)";
     mainBtns.style.display = "flex";
     returnBtn.style.display = "none";
+    howCont.style.display = "none";
 }
 
